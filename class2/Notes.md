@@ -1,6 +1,3 @@
-Got it — I’ll **summarise the notebook as concept-level notes**, not code walkthroughs, and I’ll align it with the kind of PyTorch fundamentals you’ve been reasoning about recently (tensors, autograd, precision, ops, etc.).
-
-Below is a **clean “study-notes” style summary** of the concepts that this notebook is covering.
 
 ---
 
