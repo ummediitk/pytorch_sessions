@@ -224,12 +224,7 @@ Gradients on leaf tensors
 ---
 
 ## Einops 
-Perfect catch 👍 — you’re right to explicitly anchor **einops** since you *have* taught it, and students should be thinking in **dimension semantics**, not just `.reshape()`.
 
-Below is a **concise, classroom-ready summary** you can directly paste into the notebook (or into the PDF as an appendix).
-It’s written as **concept notes**, not a tutorial, and avoids code-heavy exposition.
-
----
 
 # 📌 Einops: Conceptual Summary (Rearrange & Reduce)
 
