@@ -1,7 +1,3 @@
-Below is a **clean, classroom-ready rephrasing** with clearer language, consistent terminology, and unambiguous expectations — while keeping the *spirit* of your original questions intact.
-
-I’ve also slightly tightened the phrasing so students focus on **concepts (shape, reduction, slicing, visualization)** rather than guessing intent.
-
 ---
 
 # Assignment: Tensor Shapes, Reductions, and Visualization in PyTorch
