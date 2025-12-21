@@ -473,9 +473,6 @@ self.register_buffer("name", tensor)
 
 ## 13. Implementation of FFT in pytorch for convolution
 
-Good catch — that **definitely belongs** in the notes.
-Below is a **clean, paste-ready Markdown addition** that fits naturally after the convolution section. I’ve kept it conceptually correct, careful with wording, and honest about what’s usually hidden from tutorials.
-
 ---
 
 ## Convolution in Practice: FFT vs “Sliding Window”
