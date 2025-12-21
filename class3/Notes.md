@@ -113,17 +113,20 @@ $$
 \text{softmax}(x_i) = \frac{e^{x_i}}{\sum_j e^{x_j}}
 ]
 $$
+
 is **numerically unstable** for large values of ( x ), because ( e^{x_i} ) can overflow.
 
 ### Stable (Safe) Softmax Formula
 
 To make softmax numerically stable, we subtract the maximum value before exponentiation:
+
 $$
 [
 \text{softmax}(x_i) =
 \frac{e^{x_i - \max(x)}}{\sum_j e^{x_j - \max(x)}}
 ]
 $$
+
 This transformation:
 
 * Does **not** change the output probabilities
@@ -192,11 +195,11 @@ Hardmax is **not used in training**, only sometimes in inference.
 ## 6. F1 Score / Dice Score – Second Instability Example
 
 ### Naive F1 Formula
-
+$$
 [
 F1 = \frac{2PR}{P + R}
 ]
-
+$$
 ### Problem:
 
 * Precision or Recall may be undefined
