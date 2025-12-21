@@ -1,5 +1,3 @@
-
-
 # PyTorch – Class 3
 
 ## Numerical Stability, Softmax, F1/Dice, and `nn.Module` Internals
@@ -67,7 +65,6 @@ $$
 \text{softmax}(x_i) = \frac{e^{x_i}}{\sum_j e^{x_j}}
 ]
 $$
-
 
 ---
 
@@ -195,11 +192,13 @@ Hardmax is **not used in training**, only sometimes in inference.
 ## 6. F1 Score / Dice Score – Second Instability Example
 
 ### Naive F1 Formula
+
 $$
 [
 F1 = \frac{2PR}{P + R}
 ]
 $$
+
 ### Problem:
 
 * Precision or Recall may be undefined
@@ -264,11 +263,13 @@ class MyModel(nn.Module):
 **Dropout** is a regularization technique used during training to reduce overfitting by **randomly zeroing out activations**.
 
 If a layer output is (x), dropout produces:
+
 $$
 [
 \tilde{x} = m \odot x,\quad m_i \sim \text{Bernoulli}(1-p)
 ]
 $$
+
 where:
 
 * (p) = dropout probability (fraction of units dropped)
@@ -334,17 +335,21 @@ A subtle but important implementation detail:
 ### Two common conventions
 
 * Many signal-processing texts define convolution as:
+
 $$
   [
   y[n] = \sum_k x[k],h[n-k]
   ]
 $$
+
 * But many deep learning libraries implement what is technically **cross-correlation**:
+
 $$
   [
   y[n] = \sum_k x[k],h[n+k]
   ]
 $$
+
 ### Practical difference
 
 * **NumPy convolution** is typically aligned with the classical definition (kernel indexed with (n-k), effectively “flipping” the kernel).
@@ -495,11 +500,13 @@ This is because of a fundamental result from signal processing:
 > **Convolution in the time (or spatial) domain is equivalent to multiplication in the frequency domain.**
 
 Mathematically:
+
 $$
 [
 \mathcal{F}(x * h) = \mathcal{F}(x)\cdot \mathcal{F}(h)
 ]
 $$
+
 where:
 
 * $( * )$ denotes convolution
@@ -522,11 +529,13 @@ the computation can be:
 
 * Direct convolution is (O(N^2)) (or worse in higher dimensions)
 * FFT-based convolution reduces this to approximately:
+
 $$
   [
   O(N \log N)
   ]
 $$
+
 * This is **much faster** for:
 
   * large kernels
