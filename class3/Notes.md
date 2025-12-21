@@ -67,7 +67,7 @@ $$
 \text{softmax}(x_i) = \frac{e^{x_i}}{\sum_j e^{x_j}}
 ]
 $$
-Here’s a **clean, precise phrasing** you can directly paste into your earlier markdown. I’ve kept the tone consistent with class-notes style and added the **numerically stable softmax** explicitly.
+
 
 ---
 
