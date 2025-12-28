@@ -17,11 +17,9 @@ This section provides **quick definitions and intuition** for the main building 
 ### Mathematical view
 
 $$
-
 [
 \text{output}(i,j) = \sum_{u,v} \text{input}(i+u, j+v) \cdot \text{kernel}(u,v)
 ]
-
 $$
 
 ### Intuition
