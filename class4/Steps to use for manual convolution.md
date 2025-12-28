@@ -88,9 +88,11 @@ Where:
 
 The number of sliding locations is computed using the standard output-size formula:
 
+$$
 [
 H_{out} = \left\lfloor \frac{H + 2P - D(K - 1) - 1}{S} \right\rfloor + 1
 ]
+$$
 
 and similarly for width.
 The total number of patches is `H_out × W_out`.
