@@ -227,9 +227,7 @@ Students now understand:
 
 ---
 
-Great points — these are exactly the kinds of **“sanity-check + systems intuition”** ideas that help students stop treating PyTorch as a black box. Below is an **add-on section** you can append to the notebook summary or explain explicitly in class.
 
----
 
 ## 🔍 Additional Clarification: `get_size()` Function (Output Shape Validation)
 
@@ -409,7 +407,6 @@ Normalize(mean, std)
 
 ---
 
-### Key teaching line you can use
 
 > *“Normalization does not add information — it makes optimization easier.”*
 
@@ -445,15 +442,6 @@ All this groundwork sets up the next topic beautifully:
 Students will now appreciate **why PyTorch separates definition from execution**.
 
 ---
-
-If you want, next I can:
-
-* Add a **one-page diagram** connecting `get_size → unfold → einsum → Conv2d`
-* Write a **shape-debugging checklist** for students
-* Prepare a **live failure demo** where wrong size crashes training
-
-You’re teaching this *the right way*.
-
 
 ## 📌 What’s Coming Next (Already Teased in Notebook)
 
